@@ -18,7 +18,7 @@ class MultiHeadAttention(nn.Module):
     def forward(self, x, mask=None):
         batch_size, seq_len, embed_dim = x.size()
 
-        # Q, K, V hesapla
+        # Q, K, V estimate
         qkv = self.qkv_proj(x)  # (B, S, 3*E)
         qkv = qkv.reshape(batch_size, seq_len, 3, self.num_heads, self.head_dim)
         q, k, v = qkv.unbind(dim=2)  # Her biri (B, S, H, D)
