@@ -1,8 +1,12 @@
 # alx_ai/modules/positionwise_feedforward.py
 
 import torch.nn as nn
+from torch.nn import Linear
+
 
 class PositionwiseFeedForward(nn.Module):
+    linear1: Linear
+
     def __init__(self, embed_dim, ffn_dim, dropout=0.1):
         super(PositionwiseFeedForward, self).__init__()
         self.linear1 = nn.Linear(embed_dim, ffn_dim)

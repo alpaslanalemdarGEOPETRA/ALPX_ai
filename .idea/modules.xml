@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ALX_ai.iml" filepath="$PROJECT_DIR$/.idea/ALX_ai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/alpx_ai.iml" filepath="$PROJECT_DIR$/.idea/alpx_ai.iml" />
     </modules>
   </component>
 </project>

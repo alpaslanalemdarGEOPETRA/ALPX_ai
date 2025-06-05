@@ -1,0 +1,44 @@
+Folder PATH listing
+Volume serial number is AE33-B36C
+D:.
+|   folder_structure.txt
+|   README.md
+|   requirements.txt
+|   train.py
+|   
++---.idea
+|   |   .gitignore
+|   |   .name
+|   |   alpx_ai.iml
+|   |   misc.xml
+|   |   modules.xml
+|   |   vcs.xml
+|   |   workspace.xml
+|   |   
+|   \---inspectionProfiles
+|           profiles_settings.xml
+|           Project_Default.xml
+|           
+\---alpx_ai
+    |   main.py
+    |   __init__.py
+    |   
+    +---model
+    |       decoder.py
+    |       encoder.py
+    |       multi_head_attention.py
+    |       positional_encoding.py
+    |       positionwise_feedforward.py
+    |       transformer.py
+    |       transformer_block.py
+    |       
+    +---utils
+    |   |   tokenizer.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           __init__.cpython-313.pyc
+    |           
+    \---__pycache__
+            __init__.cpython-313.pyc
+            
