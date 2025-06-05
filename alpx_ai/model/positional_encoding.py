@@ -2,7 +2,7 @@
 
 import torch
 import torch.nn as nn
-import mathPo
+import math
 
 class PositionalEncoding(nn.Module):
     def __init__(self, embed_dim, max_len=5000, dropout=0.1):
