@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from alpx_ai.model.multi_head_attention import MultiHeadAttention
 from alpx_ai.model.positionwise_feedforward import PositionwiseFeedForward
-from alpx_ai.model.positional_encoding import PositionalEncoding
 
 class TransformerBlock(nn.Module):
     def __init__(self, embed_dim, num_heads, ff_hidden_dim, dropout=0.1):
