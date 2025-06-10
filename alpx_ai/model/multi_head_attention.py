@@ -15,7 +15,10 @@ class MultiHeadAttention(nn.Module):
         self.out_proj = nn.Linear(embed_dim, embed_dim)
         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, x, mask=None):
+    def forward(self, query, key=None, value=None, mask=None):
+        if key is None: key = query
+        if value is None: value = query
+
         batch_size, seq_len, embed_dim = x.size()
 
         # Q, K, V estimate
